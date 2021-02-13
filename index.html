@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Hours to seconds Convertion</h4>
+          <h6 class="text-center text-danger" id="secresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter hours"
+                id="hours"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Convert to Seconds"
+                onclick="seconds()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Age to days Convertion</h4>
+          <h6 class="text-center text-danger" id="dayresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter age in years"
+                id="years"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Convert to days"
+                onclick="days()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Check Leap Year</h4>
+          <h6 class="text-center text-danger" id="leapresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter year"
+                id="year"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="Check "
+                onclick="leap()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h4 class="text-center text-success">Compare string characters</h4>
+          <h6 id="comresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter first string"
+                id="s1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter Second string"
+                id="s2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Compare strings"
+                onclick="compare()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-center text-success">Carona zero caculation</h4>
+          <h6 id="caronaresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter daily recovered average "
+                id="re"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter daily new case average"
+                id="ne"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter Current active cases"
+                id="act"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Calculate days"
+                onclick="zerocarona()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h4 class="text-center text-success">Inverted array Convertion</h4>
+          <h6 id="iresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter number of elements u want to add in array"
+                id="ie"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="invert"
+                onclick="invert()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-center text-success">Integer to string</h4>
+          <h6 id="sresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter number of elements u want to add in array"
+                id="se"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="convert"
+                onclick="stri()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
